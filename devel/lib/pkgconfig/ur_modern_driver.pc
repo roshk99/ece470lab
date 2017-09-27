@@ -1,0 +1,8 @@
+prefix=/home/youbot/catkin_rkaushi2/devel
+
+Name: ur_modern_driver
+Description: Description of ur_modern_driver
+Version: 0.0.1
+Cflags: -I/home/youbot/catkin_rkaushi2/src/drivers/ur_modern_driver/include
+Libs: -L/home/youbot/catkin_rkaushi2/devel/lib 
+Requires: hardware_interface controller_manager actionlib control_msgs geometry_msgs roscpp sensor_msgs trajectory_msgs ur_msgs

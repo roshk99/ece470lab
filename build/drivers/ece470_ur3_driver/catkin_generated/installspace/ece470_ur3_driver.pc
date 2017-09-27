@@ -1,0 +1,8 @@
+prefix=/home/youbot/catkin_rkaushi2/install
+
+Name: ece470_ur3_driver
+Description: Description of ece470_ur3_driver
+Version: 0.0.0
+Cflags: -I/home/youbot/catkin_rkaushi2/install/include
+Libs: -L/home/youbot/catkin_rkaushi2/install/lib 
+Requires: roscpp rospy std_msgs message_runtime

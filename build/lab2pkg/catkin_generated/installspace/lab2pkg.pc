@@ -1,0 +1,8 @@
+prefix=/home/youbot/catkin_rkaushi2/install
+
+Name: lab2pkg
+Description: Description of lab2pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/youbot/catkin_rkaushi2/install/lib 
+Requires: 

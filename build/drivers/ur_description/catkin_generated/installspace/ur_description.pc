@@ -1,0 +1,8 @@
+prefix=/home/youbot/catkin_rkaushi2/install
+
+Name: ur_description
+Description: Description of ur_description
+Version: 1.1.9
+Cflags: 
+Libs: -L/home/youbot/catkin_rkaushi2/install/lib 
+Requires: 
