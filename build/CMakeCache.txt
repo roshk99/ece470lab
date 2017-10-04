@@ -221,6 +221,9 @@ EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 //Empy script
 EMPY_SCRIPT:STRING=/usr/bin/empy
 
+//The directory containing a CMake configuration file for Eigen.
+Eigen_DIR:PATH=Eigen_DIR-NOTFOUND
+
 //Path to a file.
 GTEST_INCLUDE_DIR:PATH=/usr/include
 
@@ -406,6 +409,15 @@ lab2pkg_BINARY_DIR:STATIC=/home/youbot/catkin_rkaushi2/build/lab2pkg
 
 //Value Computed by CMake
 lab2pkg_SOURCE_DIR:STATIC=/home/youbot/catkin_rkaushi2/src/lab2pkg
+
+//Value Computed by CMake
+lab3pkg_BINARY_DIR:STATIC=/home/youbot/catkin_rkaushi2/build/lab3pkg
+
+//Value Computed by CMake
+lab3pkg_SOURCE_DIR:STATIC=/home/youbot/catkin_rkaushi2/src/lab3pkg
+
+//Dependencies for the target
+lab3pkglib_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/i386-linux-gnu/libboost_signals.so;general;/usr/lib/i386-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/i386-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/i386-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/i386-linux-gnu/libboost_system.so;general;/usr/lib/i386-linux-gnu/libboost_thread.so;general;/usr/lib/i386-linux-gnu/libpthread.so;general;/usr/lib/i386-linux-gnu/libconsole_bridge.so;
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/indigo/lib/libtf2.so
@@ -625,7 +637,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=7
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -956,6 +956,32 @@ lab2node/fast:
 .PHONY : lab2node/fast
 
 #=============================================================================
+# Target rules for targets named lab3node
+
+# Build rule for target.
+lab3node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab3node
+.PHONY : lab3node
+
+# fast build rule for target.
+lab3node/fast:
+	$(MAKE) -f lab3pkg/CMakeFiles/lab3node.dir/build.make lab3pkg/CMakeFiles/lab3node.dir/build
+.PHONY : lab3node/fast
+
+#=============================================================================
+# Target rules for targets named lab3pkglib
+
+# Build rule for target.
+lab3pkglib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab3pkglib
+.PHONY : lab3pkglib
+
+# fast build rule for target.
+lab3pkglib/fast:
+	$(MAKE) -f lab3pkg/CMakeFiles/lab3pkglib.dir/build.make lab3pkg/CMakeFiles/lab3pkglib.dir/build
+.PHONY : lab3pkglib/fast
+
+#=============================================================================
 # Target rules for targets named control_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -1290,6 +1316,8 @@ help:
 	@echo "... ece470_ur3_driver_genlisp"
 	@echo "... ece470_ur3_driver_genpy"
 	@echo "... lab2node"
+	@echo "... lab3node"
+	@echo "... lab3pkglib"
 	@echo "... control_msgs_generate_messages_cpp"
 	@echo "... control_msgs_generate_messages_lisp"
 	@echo "... control_msgs_generate_messages_py"
