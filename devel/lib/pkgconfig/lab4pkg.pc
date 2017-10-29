@@ -1,0 +1,8 @@
+prefix=/home/youbot/catkin_rkaushi2/devel
+
+Name: lab4pkg
+Description: Description of lab4pkg
+Version: 0.0.0
+Cflags: -I/home/youbot/catkin_rkaushi2/src/lab4pkg/include
+Libs: -L/home/youbot/catkin_rkaushi2/devel/lib -llab4pkglib -llab3pkglib
+Requires: roscpp rospy std_msgs ece470_ur3_driver lab3pkg
