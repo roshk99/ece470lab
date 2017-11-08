@@ -211,8 +211,8 @@ clean: CMakeFiles/run_tests.dir/clean
 # Target rules for target CMakeFiles/tests.dir
 
 # All Build rule for target.
-CMakeFiles/tests.dir/all: drivers/cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/all
 CMakeFiles/tests.dir/all: drivers/cv_camera/CMakeFiles/test_cv_camera.dir/all
+CMakeFiles/tests.dir/all: drivers/cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/all
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles 
@@ -1491,7 +1491,7 @@ drivers/cv_camera/CMakeFiles/test_cv_camera.dir/all: gtest/CMakeFiles/gtest.dir/
 drivers/cv_camera/CMakeFiles/test_cv_camera.dir/all: drivers/cv_camera/CMakeFiles/cv_camera.dir/all
 	$(MAKE) -f drivers/cv_camera/CMakeFiles/test_cv_camera.dir/build.make drivers/cv_camera/CMakeFiles/test_cv_camera.dir/depend
 	$(MAKE) -f drivers/cv_camera/CMakeFiles/test_cv_camera.dir/build.make drivers/cv_camera/CMakeFiles/test_cv_camera.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  22
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  25
 	@echo "Built target test_cv_camera"
 .PHONY : drivers/cv_camera/CMakeFiles/test_cv_camera.dir/all
 
@@ -1523,7 +1523,7 @@ drivers/cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/all: gtest/CMakeFiles/gt
 drivers/cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/all: drivers/cv_camera/CMakeFiles/cv_camera.dir/all
 	$(MAKE) -f drivers/cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/build.make drivers/cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/depend
 	$(MAKE) -f drivers/cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/build.make drivers/cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  23
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  26
 	@echo "Built target test_cv_camera_no_yaml"
 .PHONY : drivers/cv_camera/CMakeFiles/test_cv_camera_no_yaml.dir/all
 
@@ -1830,24 +1830,24 @@ clean: drivers/ece470_ur3_driver/CMakeFiles/actionlib_msgs_generate_messages_py.
 # Target rules for target drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir
 
 # All Build rule for target.
-drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_py.dir/all
-drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_py.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_py.dir/all
+drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_cpp.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/actionlib_generate_messages_cpp.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/actionlib_generate_messages_lisp.dir/all
-drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/actionlib_generate_messages_py.dir/all
-drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/all
+drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/all
 	$(MAKE) -f drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/build.make drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/depend
 	$(MAKE) -f drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/build.make drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  5
@@ -1951,8 +1951,8 @@ clean: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages.
 
 # All Build rule for target.
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_cpp.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_cpp.dir/all: drivers/ece470_ur3_driver/CMakeFiles/_ece470_ur3_driver_generate_messages_check_deps_command.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_cpp.dir/all: drivers/ece470_ur3_driver/CMakeFiles/_ece470_ur3_driver_generate_messages_check_deps_positions.dir/all
+drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_cpp.dir/all: drivers/ece470_ur3_driver/CMakeFiles/_ece470_ur3_driver_generate_messages_check_deps_command.dir/all
 	$(MAKE) -f drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_cpp.dir/build.make drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_cpp.dir/depend
 	$(MAKE) -f drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_cpp.dir/build.make drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_cpp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  6 7
@@ -1984,8 +1984,8 @@ clean: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_
 
 # All Build rule for target.
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/all: drivers/ece470_ur3_driver/CMakeFiles/_ece470_ur3_driver_generate_messages_check_deps_command.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/all: drivers/ece470_ur3_driver/CMakeFiles/_ece470_ur3_driver_generate_messages_check_deps_positions.dir/all
+drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/all: drivers/ece470_ur3_driver/CMakeFiles/_ece470_ur3_driver_generate_messages_check_deps_command.dir/all
 	$(MAKE) -f drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/build.make drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/depend
 	$(MAKE) -f drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/build.make drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  8 9
@@ -2017,8 +2017,8 @@ clean: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_
 
 # All Build rule for target.
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_py.dir/all
-drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/all: drivers/ece470_ur3_driver/CMakeFiles/_ece470_ur3_driver_generate_messages_check_deps_command.dir/all
 drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/all: drivers/ece470_ur3_driver/CMakeFiles/_ece470_ur3_driver_generate_messages_check_deps_positions.dir/all
+drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/all: drivers/ece470_ur3_driver/CMakeFiles/_ece470_ur3_driver_generate_messages_check_deps_command.dir/all
 	$(MAKE) -f drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/build.make drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/depend
 	$(MAKE) -f drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/build.make drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  10 11 12
@@ -2178,15 +2178,15 @@ lab3pkg/preinstall:
 # Target rules for target lab3pkg/CMakeFiles/lab3node.dir
 
 # All Build rule for target.
-lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_py.dir/all
-lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_py.dir/all
 lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_py.dir/all
+lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+lab3pkg/CMakeFiles/lab3node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 lab3pkg/CMakeFiles/lab3node.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_cpp.dir/all
 lab3pkg/CMakeFiles/lab3node.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/all
 lab3pkg/CMakeFiles/lab3node.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/all
@@ -2276,15 +2276,15 @@ lab4pkg/preinstall:
 # Target rules for target lab4pkg/CMakeFiles/lab4node.dir
 
 # All Build rule for target.
-lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_py.dir/all
-lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_py.dir/all
 lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_py.dir/all
+lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+lab4pkg/CMakeFiles/lab4node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 lab4pkg/CMakeFiles/lab4node.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_cpp.dir/all
 lab4pkg/CMakeFiles/lab4node.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/all
 lab4pkg/CMakeFiles/lab4node.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/all
@@ -2352,6 +2352,113 @@ lab4pkg/CMakeFiles/lab4pkglib.dir/clean:
 
 # clean rule for target.
 clean: lab4pkg/CMakeFiles/lab4pkglib.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory lab56pkg
+
+# Convenience name for "all" pass in the directory.
+lab56pkg/all: lab56pkg/CMakeFiles/lab56node.dir/all
+lab56pkg/all: lab56pkg/CMakeFiles/lab56pkglib.dir/all
+.PHONY : lab56pkg/all
+
+# Convenience name for "clean" pass in the directory.
+lab56pkg/clean: lab56pkg/CMakeFiles/lab56node.dir/clean
+lab56pkg/clean: lab56pkg/CMakeFiles/lab56pkglib.dir/clean
+.PHONY : lab56pkg/clean
+
+# Convenience name for "preinstall" pass in the directory.
+lab56pkg/preinstall:
+.PHONY : lab56pkg/preinstall
+
+#=============================================================================
+# Target rules for target lab56pkg/CMakeFiles/lab56node.dir
+
+# All Build rule for target.
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_py.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_py.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: lab4pkg/CMakeFiles/lab4pkglib.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_cpp.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_lisp.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: drivers/ece470_ur3_driver/CMakeFiles/ece470_ur3_driver_generate_messages_py.dir/all
+lab56pkg/CMakeFiles/lab56node.dir/all: lab3pkg/CMakeFiles/lab3pkglib.dir/all
+	$(MAKE) -f lab56pkg/CMakeFiles/lab56node.dir/build.make lab56pkg/CMakeFiles/lab56node.dir/depend
+	$(MAKE) -f lab56pkg/CMakeFiles/lab56node.dir/build.make lab56pkg/CMakeFiles/lab56node.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  22 23
+	@echo "Built target lab56node"
+.PHONY : lab56pkg/CMakeFiles/lab56node.dir/all
+
+# Include target in all.
+all: lab56pkg/CMakeFiles/lab56node.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+lab56pkg/CMakeFiles/lab56node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/youbot/catkin_rkaushi2/build/CMakeFiles 11
+	$(MAKE) -f CMakeFiles/Makefile2 lab56pkg/CMakeFiles/lab56node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/youbot/catkin_rkaushi2/build/CMakeFiles 0
+.PHONY : lab56pkg/CMakeFiles/lab56node.dir/rule
+
+# Convenience name for target.
+lab56node: lab56pkg/CMakeFiles/lab56node.dir/rule
+.PHONY : lab56node
+
+# clean rule for target.
+lab56pkg/CMakeFiles/lab56node.dir/clean:
+	$(MAKE) -f lab56pkg/CMakeFiles/lab56node.dir/build.make lab56pkg/CMakeFiles/lab56node.dir/clean
+.PHONY : lab56pkg/CMakeFiles/lab56node.dir/clean
+
+# clean rule for target.
+clean: lab56pkg/CMakeFiles/lab56node.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target lab56pkg/CMakeFiles/lab56pkglib.dir
+
+# All Build rule for target.
+lab56pkg/CMakeFiles/lab56pkglib.dir/all: lab4pkg/CMakeFiles/lab4pkglib.dir/all
+lab56pkg/CMakeFiles/lab56pkglib.dir/all: lab3pkg/CMakeFiles/lab3pkglib.dir/all
+	$(MAKE) -f lab56pkg/CMakeFiles/lab56pkglib.dir/build.make lab56pkg/CMakeFiles/lab56pkglib.dir/depend
+	$(MAKE) -f lab56pkg/CMakeFiles/lab56pkglib.dir/build.make lab56pkg/CMakeFiles/lab56pkglib.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  24
+	@echo "Built target lab56pkglib"
+.PHONY : lab56pkg/CMakeFiles/lab56pkglib.dir/all
+
+# Include target in all.
+all: lab56pkg/CMakeFiles/lab56pkglib.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+lab56pkg/CMakeFiles/lab56pkglib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/youbot/catkin_rkaushi2/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 lab56pkg/CMakeFiles/lab56pkglib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/youbot/catkin_rkaushi2/build/CMakeFiles 0
+.PHONY : lab56pkg/CMakeFiles/lab56pkglib.dir/rule
+
+# Convenience name for target.
+lab56pkglib: lab56pkg/CMakeFiles/lab56pkglib.dir/rule
+.PHONY : lab56pkglib
+
+# clean rule for target.
+lab56pkg/CMakeFiles/lab56pkglib.dir/clean:
+	$(MAKE) -f lab56pkg/CMakeFiles/lab56pkglib.dir/build.make lab56pkg/CMakeFiles/lab56pkglib.dir/clean
+.PHONY : lab56pkg/CMakeFiles/lab56pkglib.dir/clean
+
+# clean rule for target.
+clean: lab56pkg/CMakeFiles/lab56pkglib.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -2858,49 +2965,49 @@ clean: drivers/ur_modern_driver/CMakeFiles/trajectory_msgs_generate_messages_py.
 # Target rules for target drivers/ur_modern_driver/CMakeFiles/ur_driver.dir
 
 # All Build rule for target.
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_py.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/sensor_msgs_generate_messages_cpp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_py.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/roscpp_generate_messages_py.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/geometry_msgs_generate_messages_py.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/sensor_msgs_generate_messages_py.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/sensor_msgs_generate_messages_lisp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_py.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/cv_camera/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/actionlib_generate_messages_cpp.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/actionlib_generate_messages_lisp.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/actionlib_generate_messages_py.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ece470_ur3_driver/CMakeFiles/actionlib_msgs_generate_messages_py.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/ur_msgs_generate_messages_lisp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/control_msgs_generate_messages_cpp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/ur_msgs_generate_messages_cpp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/control_msgs_generate_messages_py.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/tf_generate_messages_py.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/trajectory_msgs_generate_messages_py.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/tf_generate_messages_cpp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/control_msgs_generate_messages_cpp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/controller_manager_msgs_generate_messages_py.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/controller_manager_msgs_generate_messages_cpp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/ur_msgs_generate_messages_cpp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/ur_msgs_generate_messages_lisp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/trajectory_msgs_generate_messages_cpp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/control_msgs_generate_messages_lisp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/tf_generate_messages_lisp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/ur_msgs_generate_messages_py.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/tf_generate_messages_py.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/control_msgs_generate_messages_py.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/trajectory_msgs_generate_messages_lisp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/tf_generate_messages_lisp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/control_msgs_generate_messages_lisp.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/ur_hardware_interface.dir/all
-drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/all
+drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/all
 drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all: drivers/ur_modern_driver/CMakeFiles/tf2_msgs_generate_messages_py.dir/all
 	$(MAKE) -f drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/build.make drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/depend
 	$(MAKE) -f drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/build.make drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  24 25 26 27 28 29 30
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  27 28 29 30 31 32 33
 	@echo "Built target ur_driver"
 .PHONY : drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/all
 
@@ -2935,7 +3042,7 @@ clean: drivers/ur_modern_driver/CMakeFiles/ur_driver.dir/clean
 drivers/ur_modern_driver/CMakeFiles/ur_hardware_interface.dir/all:
 	$(MAKE) -f drivers/ur_modern_driver/CMakeFiles/ur_hardware_interface.dir/build.make drivers/ur_modern_driver/CMakeFiles/ur_hardware_interface.dir/depend
 	$(MAKE) -f drivers/ur_modern_driver/CMakeFiles/ur_hardware_interface.dir/build.make drivers/ur_modern_driver/CMakeFiles/ur_hardware_interface.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  31
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/youbot/catkin_rkaushi2/build/CMakeFiles  34
 	@echo "Built target ur_hardware_interface"
 .PHONY : drivers/ur_modern_driver/CMakeFiles/ur_hardware_interface.dir/all
 

@@ -123,6 +123,7 @@ IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   INCLUDE("/home/youbot/catkin_rkaushi2/build/lab2pkg/cmake_install.cmake")
   INCLUDE("/home/youbot/catkin_rkaushi2/build/lab3pkg/cmake_install.cmake")
   INCLUDE("/home/youbot/catkin_rkaushi2/build/lab4pkg/cmake_install.cmake")
+  INCLUDE("/home/youbot/catkin_rkaushi2/build/lab56pkg/cmake_install.cmake")
   INCLUDE("/home/youbot/catkin_rkaushi2/build/drivers/ur_modern_driver/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)

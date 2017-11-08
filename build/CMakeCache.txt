@@ -425,11 +425,23 @@ lab3pkglib_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libroscpp.so;general;/
 //Value Computed by CMake
 lab4pkg_BINARY_DIR:STATIC=/home/youbot/catkin_rkaushi2/build/lab4pkg
 
+//The directory containing a CMake configuration file for lab4pkg.
+lab4pkg_DIR:PATH=/home/youbot/catkin_rkaushi2/devel/share/lab4pkg/cmake
+
 //Value Computed by CMake
 lab4pkg_SOURCE_DIR:STATIC=/home/youbot/catkin_rkaushi2/src/lab4pkg
 
 //Dependencies for the target
 lab4pkglib_LIB_DEPENDS:STATIC=general;lab3pkglib;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/i386-linux-gnu/libboost_signals.so;general;/usr/lib/i386-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/i386-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/i386-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/i386-linux-gnu/libboost_system.so;general;/usr/lib/i386-linux-gnu/libboost_thread.so;general;/usr/lib/i386-linux-gnu/libpthread.so;general;/usr/lib/i386-linux-gnu/libconsole_bridge.so;
+
+//Value Computed by CMake
+lab56pkg_BINARY_DIR:STATIC=/home/youbot/catkin_rkaushi2/build/lab56pkg
+
+//Value Computed by CMake
+lab56pkg_SOURCE_DIR:STATIC=/home/youbot/catkin_rkaushi2/src/lab56pkg
+
+//Dependencies for the target
+lab56pkglib_LIB_DEPENDS:STATIC=general;/opt/ros/indigo/lib/libcv_bridge.so;general;/usr/lib/i386-linux-gnu/libopencv_videostab.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_video.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_superres.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_stitching.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_photo.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_ocl.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_objdetect.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_ml.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_legacy.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_imgproc.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_highgui.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_gpu.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_flann.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_features2d.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_core.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_contrib.so.2.4.8;general;/usr/lib/i386-linux-gnu/libopencv_calib3d.so.2.4.8;general;/opt/ros/indigo/lib/libimage_transport.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/usr/lib/i386-linux-gnu/libtinyxml.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/i386-linux-gnu/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;lab4pkglib;general;lab3pkglib;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/i386-linux-gnu/libboost_signals.so;general;/usr/lib/i386-linux-gnu/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/liblog4cxx.so;general;/usr/lib/i386-linux-gnu/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/usr/lib/i386-linux-gnu/libboost_date_time.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/i386-linux-gnu/libboost_system.so;general;/usr/lib/i386-linux-gnu/libboost_thread.so;general;/usr/lib/i386-linux-gnu/libpthread.so;general;/usr/lib/i386-linux-gnu/libconsole_bridge.so;
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/indigo/lib/libtf2.so
@@ -649,7 +661,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=9
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

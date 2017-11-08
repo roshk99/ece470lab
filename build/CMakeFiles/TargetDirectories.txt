@@ -45,6 +45,8 @@
 /home/youbot/catkin_rkaushi2/build/lab3pkg/CMakeFiles/lab3pkglib.dir
 /home/youbot/catkin_rkaushi2/build/lab4pkg/CMakeFiles/lab4node.dir
 /home/youbot/catkin_rkaushi2/build/lab4pkg/CMakeFiles/lab4pkglib.dir
+/home/youbot/catkin_rkaushi2/build/lab56pkg/CMakeFiles/lab56node.dir
+/home/youbot/catkin_rkaushi2/build/lab56pkg/CMakeFiles/lab56pkglib.dir
 /home/youbot/catkin_rkaushi2/build/drivers/cv_camera/CMakeFiles/nodelet_generate_messages_cpp.dir
 /home/youbot/catkin_rkaushi2/build/drivers/cv_camera/CMakeFiles/nodelet_generate_messages_lisp.dir
 /home/youbot/catkin_rkaushi2/build/drivers/cv_camera/CMakeFiles/nodelet_generate_messages_py.dir

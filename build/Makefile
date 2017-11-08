@@ -1008,6 +1008,32 @@ lab4pkglib/fast:
 .PHONY : lab4pkglib/fast
 
 #=============================================================================
+# Target rules for targets named lab56node
+
+# Build rule for target.
+lab56node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab56node
+.PHONY : lab56node
+
+# fast build rule for target.
+lab56node/fast:
+	$(MAKE) -f lab56pkg/CMakeFiles/lab56node.dir/build.make lab56pkg/CMakeFiles/lab56node.dir/build
+.PHONY : lab56node/fast
+
+#=============================================================================
+# Target rules for targets named lab56pkglib
+
+# Build rule for target.
+lab56pkglib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 lab56pkglib
+.PHONY : lab56pkglib
+
+# fast build rule for target.
+lab56pkglib/fast:
+	$(MAKE) -f lab56pkg/CMakeFiles/lab56pkglib.dir/build.make lab56pkg/CMakeFiles/lab56pkglib.dir/build
+.PHONY : lab56pkglib/fast
+
+#=============================================================================
 # Target rules for targets named control_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -1346,6 +1372,8 @@ help:
 	@echo "... lab3pkglib"
 	@echo "... lab4node"
 	@echo "... lab4pkglib"
+	@echo "... lab56node"
+	@echo "... lab56pkglib"
 	@echo "... control_msgs_generate_messages_cpp"
 	@echo "... control_msgs_generate_messages_lisp"
 	@echo "... control_msgs_generate_messages_py"
