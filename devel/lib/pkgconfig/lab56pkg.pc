@@ -1,0 +1,8 @@
+prefix=/home/youbot/catkin_rkaushi2/devel
+
+Name: lab56pkg
+Description: Description of lab56pkg
+Version: 0.0.0
+Cflags: -I/home/youbot/catkin_rkaushi2/src/lab56pkg/include
+Libs: -L/home/youbot/catkin_rkaushi2/devel/lib -llab56pkglib
+Requires: cv_bridge image_transport roscpp rospy sensor_msgs std_msgs ece470_ur3_driver lab4pkg lab3pkg
