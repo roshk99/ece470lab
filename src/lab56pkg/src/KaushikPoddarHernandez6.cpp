@@ -11,10 +11,7 @@ float SuctionValue = 0.0;
 
 bool leftclickdone = 1;
 bool rightclickdone = 1;
-float block_height = 0.031;
-float x_centroid[10] = {0.0};
-float y_centroid[10] = {0.0};
-int object_sizes[10] = {0};
+
 /*****************************************************
 * Functions in class:
 * **************************************************/	
@@ -294,6 +291,7 @@ Mat ImageConverter::associateObjects(Mat bw_img)
 		}
 	}
 
+	//cout << endl << "hi" << endl;
 	for (int r=0; r<height; r++) {
 		for (int c=0; c<width; c++) {	
 			pixel = pixellabel[r][c];
@@ -323,7 +321,6 @@ Mat ImageConverter::associateObjects(Mat bw_img)
 					pixellabel[r][c] = -1;
 				}
 				else {
-					
 					if(std::find(cur_labels.begin(), cur_labels.end(), pixellabel[r][c]) == cur_labels.end())
 					cur_labels.push_back(pixellabel[r][c]);
 				}
@@ -332,7 +329,6 @@ Mat ImageConverter::associateObjects(Mat bw_img)
 	}
 	int num_objects = cur_labels.size();
 	//cout << "Number of Objects: " << num_objects << endl;
-
 	int old_label;
 	for (int i=0; i<num_objects; i++) {
 		old_label = cur_labels[i];
@@ -345,14 +341,6 @@ Mat ImageConverter::associateObjects(Mat bw_img)
 		}
 	}
 
-	for (int i = 0; i<10000; i++) {
-		if (objectsize[i] > low_bound && objectsize[i] < upper_bound) {
-			//cout << objectsize[i] << " , "; 
-		}
-		objectsize[i] = 0;
-	}
-	//cout << endl;
-
 	float m00[num_objects];
 	float m01[num_objects];
 	float m10[num_objects];
@@ -364,7 +352,6 @@ Mat ImageConverter::associateObjects(Mat bw_img)
 		m10[k] = 0.0;
 		rbar[k] = 0.0;
 		cbar[k] = 0.0;
-		object_sizes[k] = 0;
 	}
 
 	for (int r=0; r<height; r++) {
@@ -373,15 +360,14 @@ Mat ImageConverter::associateObjects(Mat bw_img)
 			m10[k] += r;
 			m01[k] += c;
 			m00[k] += 1;
-			object_sizes[k] += 1;
 		}
 	}
+
 
 	for (int k=0; k<num_objects; k++) {
 		rbar[k] = m10[k]/m00[k];
 		cbar[k] = m01[k]/m00[k];
-		x_centroid[k] = rbar[k];
-		y_centroid[k] = cbar[k];
+		//cout << "Object "<< k+1 << "is at " << rbar[k] << " and " << cbar[k] << endl;
 	}
 
 	// assign UNIQUE color to each object
@@ -520,7 +506,6 @@ void ImageConverter::onClick(int event,int x, int y, int flags, void* userdata)
 	float x_w = cos(theta)*(x_c - T_x) + sin(theta)*(y_c - T_y);// + (20-16.8)/100;
 	float y_w = -sin(theta)*(x_c - T_x) + cos(theta)*(y_c - T_y);
 	
-
 	// For use with Lab 6
 	// If the robot is holding a block, place it at the designated row and column. 
 	if  ( event == EVENT_LBUTTONDOWN ) //if left click, do nothing other than printing the clicked point
@@ -528,60 +513,7 @@ void ImageConverter::onClick(int event,int x, int y, int flags, void* userdata)
 		if (leftclickdone == 1) {
 			leftclickdone = 0;  // code started
 			ROS_INFO_STREAM("left click:  (" << x << ", " << y << ")");  //the point you clicked
-			float cur_dist;
-			int cur_obj;
-			float min_dist = 10000.0;
-			for (int i = 0; i<10; i++) {
-				cur_dist = sqrt(pow(y-x_centroid[i], 2)+pow(x-y_centroid[i], 2));
-				if (x_centroid[i] == 0.0 && y_centroid[i] == 0.0) {
-					break;
-				}
-				//cout << cur_dist << endl;
-				if (cur_dist < min_dist) {
-					min_dist = cur_dist;
-					cur_obj = i;
-				}
-				//cout << x_centroid[i] << " , " << y_centroid[i] << endl;
-				//cout << "---" << endl;
-			}
-			cout << "Size: " << object_sizes[cur_obj] << endl;
-
-			int data_x[] = {512, 465, 404, 359, 96, 98, 157, 192};
-			int data_y[] = {72, 174, 238, 120, 79, 180, 240, 111};
-			int block_height_map[8][6] = {{1180, 1951, 2780, 3700, 4460, 5350}, {1080, 1610, 2390, 2920, 3620, 4360}, {1005, 1350, 1870, 2340, 2910, 3450}, 
-						{1030, 1640, 2050, 2520, 3080, 3880}, {1080, 1690, 2290, 3040, 3800, 4640}, {1030, 1540, 2160, 2720, 3315, 4150}, 
-						{1000, 1475, 1940, 2444, 3000, 3630}, {980, 1520, 2040, 2555, 3290, 3820}};
-			int cur_point;
-			min_dist = 10000.0;
-			for (int i = 0; i < 8; i++) {
-				cur_dist = sqrt(pow(data_y[i]-x_centroid[cur_obj], 2)+pow(data_x[i]-y_centroid[cur_obj], 2));
-				if (cur_dist < min_dist) {
-					min_dist = cur_dist;
-					cur_point = i;
-				}
-			}
-			cout << "Closest point: " << cur_point << endl;
-
-			min_dist = 10000.0;
-			int block_height;
-			for (int i =0; i< 6; i++) {
-				cur_dist = abs(object_sizes[cur_obj]-block_height_map[cur_point][i]);
-				if (cur_dist < min_dist) {
-					min_dist = cur_dist;
-					block_height = i;
-				}
-			}
-			cout << "Stack Height: " << block_height+1 << endl;
-			cout << "_________________" << endl;
-
-
-
-			//cout << object_sizes[cur_obj] << endl;
-			/*if (SuctionValue < 1.5) {
-				int num_blocks;
-				cout << "Enter height of blocks from 1-6: ";
-				cin >> num_blocks;
-				float z_w = num_blocks*block_height - 0.017;
+			if (SuctionValue < 1.5) {
 				cout << x_w*100 << "," << y_w*100 << endl;
 				driver_msg.destination=lab_invk(x_w, y_w, z_up, 45);
 
@@ -611,7 +543,7 @@ void ImageConverter::onClick(int event,int x, int y, int flags, void* userdata)
 				}
 				ROS_INFO_STREAM("Ready for new point");
 
-				driver_msg.destination=lab_invk(x_w, y_w, z_w, 45);
+				driver_msg.destination=lab_invk(x_w, y_w, z_down, 45);
 
 				//publish the point to the robot
 				pub_command.publish(driver_msg);  // publish command, but note that is possible that
@@ -668,9 +600,9 @@ void ImageConverter::onClick(int event,int x, int y, int flags, void* userdata)
 					ros::spinOnce();
 					loop_rate.sleep();
 				}
-				ROS_INFO_STREAM("Ready for new point");*/
+				ROS_INFO_STREAM("Ready for new point");
 			leftclickdone = 1; // code finished
-		//}
+		}
 
 		} else {
 			ROS_INFO_STREAM("Previous Left Click not finshed, IGNORING this Click"); 
@@ -682,10 +614,6 @@ void ImageConverter::onClick(int event,int x, int y, int flags, void* userdata)
 			rightclickdone = 0;  // starting code
 			ROS_INFO_STREAM("right click:  (" << x << ", " << y << ")");  //the point you clicked
 			// put your right click code here
-				int num_blocks;
-				cout << "Enter height of blocks from 1-6: ";
-				cin >> num_blocks;
-				float z_w = num_blocks*block_height - 0.017;
 				if (SuctionValue > 1.5) {
 				cout << x_w*100 << "," << y_w*100 << endl;
 				driver_msg.destination=lab_invk(x_w, y_w, z_up, 45);
@@ -716,7 +644,7 @@ void ImageConverter::onClick(int event,int x, int y, int flags, void* userdata)
 				}
 				ROS_INFO_STREAM("Ready for new point");
 
-				driver_msg.destination=lab_invk(x_w, y_w, z_w, 45);
+				driver_msg.destination=lab_invk(x_w, y_w, z_down, 45);
 
 				//publish the point to the robot
 				pub_command.publish(driver_msg);  // publish command, but note that is possible that
